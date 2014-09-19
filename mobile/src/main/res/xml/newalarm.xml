@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+    <PreferenceCategory android:title="@string/date" >
+        <Preference
+        android:key="btnDatePicker"
+        android:title="@string/date" />
+        <Preference
+            android:key="btnTimePicker"
+            android:title="@string/time"/>
+        <PreferenceScreen
+            android:key="repeatSettings"
+            android:title="@string/repeat">
+            <!--ListPreference
+                android:key="btnReschedule"
+                android:entries="@array/repeat"
+                android:entryValues="@array/repeatValue"
+                android:title="@string/repeat"/-->
+            <!--TODO fix listpreference-->
+            <CheckBoxPreference
+                android:key="notOnWorkDaysValue"
+                android:title="@string/notOnWorkDays"
+                android:summary="@string/notOnWorkDaysSubText"/>
+            <!--TODO important event selector-->
+            <Preference
+                android:key="customRepeat"
+                android:title="@string/customRepeat"/>
+            </PreferenceScreen>
+        <CheckBoxPreference
+            android:key="btnuntil"
+            android:title="Repeat until"
+            android:enabled="false"/>
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/name" >
+        <EditTextPreference
+            android:key="rename"
+            android:inputType="textAutoComplete"
+            android:title="@string/name"
+            android:defaultValue="Alarm"/>
+        <CheckBoxPreference
+            android:key="deleteondismiss"
+            android:title="@string/deleteondismiss"/>
+    </PreferenceCategory>
+
+</PreferenceScreen>

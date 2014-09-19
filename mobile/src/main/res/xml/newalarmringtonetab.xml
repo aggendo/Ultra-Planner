@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory
+        android:title="@string/ringtone">
+        <RingtonePreference
+            android:title="@string/ringtone"
+            android:key="ringtone"/>
+        <CheckBoxPreference
+            android:title="@string/ringinsilent"
+            android:key="ringInSilent"/>
+        <CheckBoxPreference
+            android:title="@string/ringinvib"
+            android:key="ringtoneInVibrate"/>
+        <CheckBoxPreference
+            android:title="@string/snooze"
+            android:key="snooze"/>
+        <EditTextPreference
+            android:inputType="number"
+            android:dependency="snooze"
+            android:title="@string/snoozeLength"
+            android:key="snoozelength"/>
+        <EditTextPreference
+            android:dependency="snooze"
+            android:inputType="number"
+            android:title="@string/snoozeNum"/>
+        </PreferenceCategory>
+</PreferenceScreen>

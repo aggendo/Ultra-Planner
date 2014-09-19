@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="daysfull">
+        <item name="1">Monday</item>
+        <item name="2">Tuesday</item>
+        <item name="3">Wednesday</item>
+        <item name="4">Thursday</item>
+        <item name="5">Friday</item>
+        <item name="6">Saturday</item>
+        <item name="7">Sunday</item>
+    </string-array>
+    <string-array name="repeat">
+        <item>Never</item>
+        <item>Daily</item>
+        <item>Weekly</item>
+        <item>Monthly</item>
+        <item>Yearly</item>
+        <item>Custom</item>
+    </string-array>
+    <string-array name="repeatValue">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
+</resources>
